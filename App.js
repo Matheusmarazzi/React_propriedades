@@ -4,21 +4,23 @@ import {
   View,
   Text 
 } from 'react-native';
-import C1 from './componentes/comp';
+import Estilos from './estilos/style.js';
+import C1 from './componentes/comp.js';
+
 /*import { Component } from 'react/cjs/react.production.min';*/
 /*function*/
 export default function App1(){
   return(
-    <View style={estilos.container}>
-      <C1 curso="React Native" nota="7" cor="#ff0"/>
-      <C1 curso="C#" nota="8" cor="#000"/>
-      <Text style={estilos.txt3}>titulo 3</Text>
+    <View style={Estilos.container}>
+      <C1 curso="React Native" nota="7"/>
+      <C1 curso="C#" nota="8"/>
+      <Text style={Estilos.textoTitulo}>titulo 3</Text>
         
   
     </View>
   );
 };
-const estilos = StyleSheet.create({
+/*const estilos = StyleSheet.create({
   container:{
     flex:1,
     backgroundColor: '#FFF',
@@ -29,7 +31,7 @@ const estilos = StyleSheet.create({
       color: '#f00',
       fontSize: 30,
     }
-});
+});*/
 
 /* class
 export default class App1 extends Component{
